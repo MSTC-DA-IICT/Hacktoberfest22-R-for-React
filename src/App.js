@@ -1,25 +1,44 @@
-import logo from './logo.svg';
 import './App.css';
+
+// Components of MUI
+import { Typography } from '@mui/material';
+
+// Components of Project and .js files
+import Navbar from './Components/Navbar';
+import MainContainer from './Components/MainContainer';
+import Footer from './Components/Footer';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+
+        <Navbar />
+        <MainContainer />
+        <Footer />
+
+        
+  
+
+
     </div>
   );
 }
 
 export default App;
+
+
+
+{/* 
+
+ -- Work to do --
+
+ -- Navbar
+ -- Main container
+ -- Footer with links
+ -- Contact Page
+ -- About page
+ -- Routing 
+
+
+
+*/}

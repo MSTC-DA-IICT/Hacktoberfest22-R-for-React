@@ -1,0 +1,38 @@
+{
+  "products": [
+    {
+      "name": "Men's Purple Goosebumps Graphic Printed Oversized T-shirt",
+      "sizes": ["S", "M", "L", "XL", "2XL", "3XL"],
+      "tags": ["design of the day", "oversized fit"],
+      "description": "Groove to the dope beats in a fit that matches the vibe like this Goosebumps Men's T-Shirt. Pair this purple t-shirt with relaxed-fit trousers and canvas shoes for an urbane look.",
+      "made_in": "india",
+      "nanufactured_by": "Bewakoof Brands Pvt Ltd, Sairaj Logistic Hub #A5, Bmc Pipeline Road, Opposite All Saints High School, Amne, Bhiwandi, Thane, Maharashtra 421326",
+      "packed_by": "Bewakoof Brands Pvt Ltd, Sairaj Logistic Hub #A5, Bmc Pipeline Road, Opposite All Saints High School, Amne, Bhiwandi, Thane, Maharashtra 421326",
+      "discounted_price": "449",
+      "original_price": "1299",
+      "return_policy": 15,
+      "product_image": "https://images.bewakoof.com/t1080/men-s-purple-goosebumps-graphic-printed-oversized-t-shirt-546554-1665042512-1.jpg",
+      "gallery": [
+        "https://images.bewakoof.com/t1080/men-s-purple-goosebumps-graphic-printed-oversized-t-shirt-546554-1665042517-2.jpg",
+        "https://images.bewakoof.com/t1080/men-s-purple-goosebumps-graphic-printed-oversized-t-shirt-546554-1665042522-3.jpg"
+      ]
+    },
+    {
+      "name": "Men's Purple Goosebumps Graphic Printed Oversized T-shirt",
+      "sizes": ["S", "M", "L", "XL", "2XL", "3XL"],
+      "tags": ["design of the day", "oversized fit"],
+      "description": "This Prototype 1.0 Men's T-Shirt makes every game worth exploring. Style this blue t-shirt with denim shorts and sliders for a game-ready look.",
+      "made_in": "india",
+      "nanufactured_by": "Bewakoof Brands Pvt Ltd, Sairaj Logistic Hub #A5, Bmc Pipeline Road, Opposite All Saints High School, Amne, Bhiwandi, Thane, Maharashtra 421326",
+      "packed_by": "Bewakoof Brands Pvt Ltd, Sairaj Logistic Hub #A5, Bmc Pipeline Road, Opposite All Saints High School, Amne, Bhiwandi, Thane, Maharashtra 421326",
+      "discounted_price": "449",
+      "original_price": "1299",
+      "return_policy": 15,
+      "product_image": "https://images.bewakoof.com/t1080/prototype-1-0-oversized-fit-t-shirt-546644-1665033594-1.jpg",
+      "gallery": [
+        "https://images.bewakoof.com/t1080/prototype-1-0-oversized-fit-t-shirt-546644-1665033599-2.jpg",
+        "https://images.bewakoof.com/t1080/prototype-1-0-oversized-fit-t-shirt-546644-1665033606-3.jpg"
+      ]
+    }
+  ]
+}

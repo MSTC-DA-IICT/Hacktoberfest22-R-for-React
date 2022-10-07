@@ -1,34 +1,21 @@
-import './App.css';
-
-// Components of MUI
-import { Typography } from '@mui/material';
-
-// Components of Project and .js files
-import Navbar from './Components/Navbar';
-import MainContainer from './Components/MainContainer';
-import Footer from './Components/Footer';
+import { Routes, Route } from "react-router-dom";
+//pages
+import Home from "./pages/Home/Home";
 
 function App() {
   return (
-    <div className="App">
-
-        <Navbar />
-        <MainContainer />
-        <Footer />
-
-        
-  
-
-
-    </div>
+    <>
+      <Routes>
+        <Route path="/" element={<Home />} />
+      </Routes>
+    </>
   );
 }
 
 export default App;
 
-
-
-{/* 
+{
+  /* 
 
  -- Work to do --
 
@@ -41,4 +28,5 @@ export default App;
 
 
 
-*/}
+*/
+}

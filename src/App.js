@@ -1,5 +1,5 @@
 import './App.css';
-
+import data from './data/product-data.json'
 // Components of MUI
 import { Typography } from '@mui/material';
 
@@ -13,7 +13,7 @@ function App() {
     <div className="App">
 
         <Navbar />
-        <MainContainer />
+        <MainContainer data={data}/>
         <Footer />
 
         

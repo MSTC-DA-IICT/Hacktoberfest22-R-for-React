@@ -1,4 +1,4 @@
-.App {
+/* .App {
   text-align: center;
 }
 
@@ -35,4 +35,84 @@
   to {
     transform: rotate(360deg);
   }
+} */
+body{
+   background: #00f260;
+   font-family: "Roboto", sans-serif;
+}
+
+#form__container{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.inner{
+    width: 60%;
+    height: 85vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left__form, .right__form{
+  height: 100%;
+  width: 50%;
+}
+.left__form{
+    background: conic-gradient(#80FFDB, #5390D9);
+}
+
+
+.right__form{
+  background: #fff;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 25% 65%;
+  justify-content: center;
+}
+h1{
+  text-align: center;
+}
+form{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.form__input{
+  position: relative;
+  width: 68%;
+}
+.form__input input{
+  width: 100%;
+  height: 30px;
+  border: 1px solid rgba(255, 255, 255, 50%);
+  border-radius: 5px;
+  outline: none;
+  font-size: 1em;
+}
+.form__input input[placeholder]{
+  padding-left: 15px;
+  /* font-size: 1em; */
+}
+.form__input input[type="checkbox"]{
+  width: 18px;
+  height: 18px;
+}
+
+.form__input span{
+  position: absolute;
+  left: 0;
+  font-size: 1em;
+  pointer-events: none;
+  padding: 0 17px;
+  margin-top: -30px;
+  transition: 0.5s;
+}
+.form__input input:focus ~ span {
+  font-size: 0.7em;
+  transform: translateX(10px) translateY(-12px);
 }

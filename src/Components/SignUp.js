@@ -12,7 +12,7 @@ import signUp from "../images/login-image.svg";
 import googleLogo from "../images/google-logo-9822.png";
 
 const SignUp = () => {
-  const [formData, SetFormData] = useState({
+  const [signUpData, SetSignUpData] = useState({
     userName: "",
     email: "",
     phoneNumber: parseInt(),
@@ -25,7 +25,7 @@ const SignUp = () => {
   }
   function handleChange(event) {
     const { name, value, type, checked } = event.target;
-    SetFormData((prevFormData) => ({
+    SetSignUpData((prevFormData) => ({
       ...prevFormData,
       [name]: type === "checkbox" ? checked : value,
     }));
@@ -47,7 +47,7 @@ const SignUp = () => {
               type="text"
               name="userName"
               // id="firstName"
-              value={formData.userName}
+              value={signUpData.userName}
               onChange={handleChange}
               required
             />
@@ -58,7 +58,7 @@ const SignUp = () => {
             <input
               type="email"
               name="email"
-              value={formData.email}
+              value={signUpData.email}
               onChange={handleChange}
               required
             />
@@ -69,7 +69,7 @@ const SignUp = () => {
             <input
               type="number"
               name="phoneNumber"
-              value={formData.phoneNumber}
+              value={signUpData.phoneNumber}
               onChange={handleChange}
               required
             />
@@ -80,7 +80,7 @@ const SignUp = () => {
             <input
               type="password"
               name="password"
-              value={formData.password}
+              value={signUpData.password}
               onChange={handleChange}
               required
             />
@@ -91,7 +91,7 @@ const SignUp = () => {
             <input
               type="password"
               name="confirmPassword"
-              value={formData.confirmPassword}
+              value={signUpData.confirmPassword}
               onChange={handleChange}
               required
             />
@@ -103,7 +103,7 @@ const SignUp = () => {
               type="checkbox"
               id="agree"
               name="termIsAgree"
-              checked={formData.termIsAgree}
+              checked={signUpData.termIsAgree}
               onChange={handleChange}
               required
             />{" "}

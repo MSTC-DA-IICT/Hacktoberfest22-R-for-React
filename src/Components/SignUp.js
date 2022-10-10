@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { FaFontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faEnvelope,

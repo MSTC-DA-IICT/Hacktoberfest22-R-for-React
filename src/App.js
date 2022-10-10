@@ -1,8 +1,10 @@
 import './App.css';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 // Components of MUI
 import { Typography } from '@mui/material';
 import SignUp from './Components/SignUp';
+import SignIn from './Components/SignIn';
 
 // Components of Project and .js files
 // import Navbar from './Components/Navbar';
@@ -11,17 +13,32 @@ import SignUp from './Components/SignUp';
 
 function App() {
   return (
+    <BrowserRouter>
+    <Routes>
+    <Route
+    path="signIn"
+    element={
     <div className="App">
-
-        {/* <Navbar />
-        <MainContainer />
-        <Footer /> */}
-
-        <SignUp />
-  
-
-
+     <div id="form__container">
+        <SignIn />
+     </div>
     </div>
+    }
+    />
+    </Routes>
+    <Routes>
+    <Route
+    path="/"
+    element={
+    <div className="App">
+     <div id="form__container">
+        <SignUp />
+     </div>
+    </div>
+    }
+    />
+    </Routes>
+    </BrowserRouter>
   );
 }
 

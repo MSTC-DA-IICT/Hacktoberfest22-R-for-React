@@ -1,13 +1,24 @@
 import React, { useState } from "react";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { FaFontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faEnvelope,
+  faLock,
+  faPhone,
+  faUser,
+} from "@fortawesome/free-solid-svg-icons";
+import { Link } from "react-router-dom";
+import signUp from "../images/login-image.svg";
+import googleLogo from "../images/google-logo-9822.png";
+
 const SignUp = () => {
   const [formData, SetFormData] = useState({
     userName: "",
     email: "",
-    phoneNumber: parseInt(""),
+    phoneNumber: parseInt(),
     password: "",
     confirmPassword: "",
-    termIsAgree: true,
+    termIsAgree: false,
   });
   function handleSubmit(event) {
     event.preventDefault();
@@ -20,80 +31,102 @@ const SignUp = () => {
     }));
   }
   return (
-    <div id="form__container">
-      <div className="inner">
-        <div className="left__form"></div>
-        <div className="right__form">
-          <h1>Sign up</h1>
-          <form onSubmit={handleSubmit}>
-            <div className= 'form__input'>
+    <div className="inner">
+      <div className="left__form">
+        <img src={signUp} alt="sign up logo" />
+        <p className="description">
+          Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
+          commodo ligula eget dolor. Aenean massa.
+        </p>
+      </div>
+      <div className="right__form">
+        <h1>Sign up</h1>
+        <form onSubmit={handleSubmit}>
+          <div className="form__input">
             <input
               type="text"
-              placeholder="User Name*"
               name="userName"
               // id="firstName"
               value={formData.userName}
               onChange={handleChange}
-              />
+              required
+            />
+            <FontAwesomeIcon icon={faUser} className="icon" />
             <span>User Name</span>
-              </div>
-            <div className= 'form__input'>
+          </div>
+          <div className="form__input">
             <input
               type="email"
-              placeholder="Email"
               name="email"
               value={formData.email}
               onChange={handleChange}
-              />
+              required
+            />
+            <FontAwesomeIcon icon={faEnvelope} className="icon" />
             <span>Email</span>
-              </div>
-            <div className= 'form__input'>
+          </div>
+          <div className="form__input">
             <input
               type="number"
-              placeholder="Phone"
               name="phoneNumber"
-              // id=""
               value={formData.phoneNumber}
               onChange={handleChange}
-              />
+              required
+            />
+            <FontAwesomeIcon icon={faPhone} className="icon" />
             <span>Phone</span>
-              </div>
-            <div className= 'form__input'>
+          </div>
+          <div className="form__input">
             <input
               type="password"
-              placeholder="Password"
               name="password"
               value={formData.password}
               onChange={handleChange}
-              />
+              required
+            />
+            <FontAwesomeIcon icon={faLock} className="icon" />
             <span>Password</span>
-              </div>
-            <div className= 'form__input'>
+          </div>
+          <div className="form__input">
             <input
               type="password"
-              placeholder="Confirm password"
               name="confirmPassword"
               value={formData.confirmPassword}
               onChange={handleChange}
-              />
+              required
+            />
+            <FontAwesomeIcon icon={faLock} className="icon" />
             <span>Confirm password</span>
-              </div>
-            <label htmlFor="agree">
-              <input
-                type="checkbox"
-                id="agree"
-                name="termIsAgree"
-                checked={formData.termIsAgree}
-                onChange={handleChange}
-              />{" "}
-              Agree to our Terms and Conditions?
-            </label>
-            <button>Create Account</button>
-          </form>
-          <p>Already have an Account? </p>
+          </div>
+          <span>
+            <input
+              type="checkbox"
+              id="agree"
+              name="termIsAgree"
+              checked={formData.termIsAgree}
+              onChange={handleChange}
+              required
+            />{" "}
+            <label htmlFor="agree">Agree to our</label>
+            <span className="terms"> Terms and Conditions?</span>
+          </span>
+          <div className="btn__div">
+            <button className="btn__submit">Create Account</button>
+          </div>
+        </form>
+        <div className="btn">
+          <img src={googleLogo} alt="google logo" className="google__logo" />
+          <button className="btn__submit google">sign up with Google</button>
         </div>
+        <p className="is__account">
+          Already have an Account?{" "}
+          <Link to="/SignIn" className="login__link">
+            Login
+          </Link>
+        </p>
       </div>
     </div>
   );
 };
+
 export default SignUp;

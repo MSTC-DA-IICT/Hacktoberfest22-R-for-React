@@ -5,7 +5,8 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { Typography } from '@mui/material';
 import SignUp from './Components/SignUp';
 import SignIn from './Components/SignIn';
-
+import ProductCard from './Components/ProductCard';
+import data from './data/product-data.json'
 // Components of Project and .js files
 // import Navbar from './Components/Navbar';
 // import MainContainer from './Components/MainContainer';
@@ -14,30 +15,38 @@ import SignIn from './Components/SignIn';
 function App() {
   return (
     <BrowserRouter>
-    <Routes>
-    <Route
-    path="signIn"
-    element={
-    <div className="App">
-     <div id="form__container">
-        <SignIn />
-     </div>
-    </div>
-    }
-    />
-    </Routes>
-    <Routes>
-    <Route
-    path="/"
-    element={
-    <div className="App">
-     <div id="form__container">
-        <SignUp />
-     </div>
-    </div>
-    }
-    />
-    </Routes>
+      <Routes>
+        <Route
+          path="/signIn"
+          element={
+            <div className="App">
+              <div id="form__container">
+                <SignIn />
+              </div>
+            </div>
+          }
+        />
+        <Route
+          path="/"
+          element={
+            <div className="App">
+              <div id="form__container">
+                <SignUp />
+              </div>
+            </div>
+          }
+        />
+        <Route
+          path="/card"
+          element={
+            <div className="App">
+              <div id="form__container">
+                <ProductCard data={data[0]} />
+              </div>
+            </div>
+          }
+        />
+      </Routes>
     </BrowserRouter>
   );
 }

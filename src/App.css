@@ -1,4 +1,4 @@
-.App {
+/* .App {
   text-align: center;
 }
 
@@ -35,4 +35,179 @@
   to {
     transform: rotate(360deg);
   }
+} */
+body{
+   background: #f3f3f3;
+   font-family: "Roboto", sans-serif;
+}
+
+#form__container{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.inner{
+    width: 60%;
+    height: 85vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left__form, .right__form{
+  height: 100%;
+  width: 50%;
+}
+.left__form{
+  border-radius:  10px 0 0 10px;
+    background: conic-gradient(#80FFDB, #5390D9);
+}
+.left__form img{
+  width: 100%;
+}
+
+.left__form .description{
+  text-align: center;
+  padding: 20px;
+}
+
+.right__form{
+  background: #fff;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 22% 60%;
+  justify-content: center;
+  border-radius: 0 10px 10px 0;
+}
+.signin{
+  grid-template-rows: 22% 45%;
+}
+h1{
+  text-align: center;
+}
+form{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.form__input{
+  position: relative;
+  width: 68%;
+}
+.form__input input{
+  width: 100%;
+  border-radius: 5px;
+  outline: none;
+  font-size: 1em;
+  padding: 10px;
+  border: 1px solid #aaa;
+  color: #111;
+  text-indent: 30px;
+}
+.form__input input[type="checkbox"]{
+  width: 18px;
+  height: 18px;
+}
+
+.form__input span, .icon{
+  position: absolute;
+  left: 0;
+  font-size: 1em;
+  pointer-events: none;
+  padding: 0 15px;
+  margin-top: -28px;
+  transition: 0.5s;
+}
+.form__input span {
+  padding-left: 40px;
+  color: #1b2d3a;
+}
+/* .form__input input:valid ~ span, */
+.form__input input:valid ~ span,
+.form__input input:focus ~ span {
+  font-size: 0.8em;
+  padding: 0 20px;
+  background: #fff;
+  transform: translateX(25px) translateY(-1.4em);
+  letter-spacing: 0.2em;
+}
+.form__input input:focus{
+  border: 1px solid #5390D9;
+  background: #fff;
+}
+.terms{
+  color:#5390D9;
+  cursor: pointer;
+}
+form .btn__div{
+  width: 74%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 20px;
+  position: relative;
+}
+form .btn__div .btn__submit{
+  width: 100%;
+  height: 35px;
+  border-radius: 8px;
+  border: none;
+  color: #111;
+  font-weight: 700;
+  cursor: pointer;
+  font-weight: 700;
+  background: conic-gradient(#80FFDB, #5390D9);
+}
+.btn{
+  width: 74%;
+  padding-left: 20px;
+  justify-self: center;
+  position: relative;
+  color: #111; 
+}
+.btn .google__logo{
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  margin-top: 5px;
+  left: 20%;
+  padding: 0 15px;
+}
+.btn .btn__submit{
+  width: 100%;
+  height: 35px;
+  border: 1px solid #aaa;
+  border-radius: 5px;
+  font-weight: 700;
+  background: #fff;
+  color: #999;
+  cursor: pointer;
+}
+
+.inner .is__account{
+  justify-self: center;
+}
+/* signIn style */
+.password__forgot,
+.inner .login__link{
+  color: #5390D9;
+  cursor: pointer;
+  text-decoration: none;
+}
+.wrap__input{
+  display: flex;
+  width: 70%;
+  justify-content: space-between;
+  margin-top: -20px;
+  align-items: center;
+}
+.wrap__input span{
+  /* width: 100%; */
+}
+.agree__signin{
+  margin-top: 8px;
 }

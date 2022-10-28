@@ -1,0 +1,52 @@
+[
+    {
+        "title": "Maniac",
+        "description": "Color Block Men's Fullsleeve Hooded Yellow Cotton Tshirt",
+        "img": "https://m.media-amazon.com/images/I/71pfO0kYzfL._AC_UL480_FMwebp_QL65_.jpg",
+        "old_cost": 1249,
+        "new_cost": 259,
+        "category": "mens t-shirt",
+        "reviews": [10, 20, 21, 10, 50],
+        "url":"#"
+    },
+    {
+        "title": "EYEBOGLER",
+        "description": "Men T-Shirt",
+        "img": "https://m.media-amazon.com/images/I/51XkLH567OL._AC_UL480_FMwebp_QL65_.jpg",
+        "old_cost": 1299,
+        "new_cost": 259,
+        "category": "mens t-shirt",
+        "reviews": [3, 10, 30, 20, 10],
+        "url":"#"
+    },
+    {
+        "title": "Amazon Brand - Symbol",
+        "description": "Men's Regular Polo Shirt",
+        "img": "https://m.media-amazon.com/images/I/91Er0gi0ALL._AC_UL480_FMwebp_QL65_.jpg",
+        "old_cost": 999,
+        "new_cost": 259,
+        "category": "mens t-shirt",
+        "reviews": [1, 0, 21, 19, 28],
+        "url":"#"
+    },
+    {
+        "title": "LEOTUDE",
+        "description": "Regular Fit Cotton Blend Half Sleeve Polo T-Shirt for Men",
+        "img": "https://m.media-amazon.com/images/I/71vKxD1RBPL._AC_UL480_FMwebp_QL65_.jpg",
+        "old_cost": 1099,
+        "new_cost": 299,
+        "category": "mens t-shirt",
+        "reviews": [1, 2, 20, 10, 25],
+        "url":"#"
+    },
+    {
+        "title": "CHKOKKO",
+        "description": "Men's Round Neck Regular Dry Fit Gym Sports T-Shirt",
+        "img": "https://m.media-amazon.com/images/I/61+EdFUcGjL._AC_UL480_FMwebp_QL65_.jpg",
+        "old_cost": 1665,
+        "new_cost": 269,
+        "category": "mens t-shirt",
+        "reviews": [10, 2, 19, 25, 83],
+        "url":"#"
+    }
+]
